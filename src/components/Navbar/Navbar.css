@@ -1,0 +1,117 @@
+nav{
+    background-color: var(--white);
+    padding: 4% 8%;
+    position: relative;
+    z-index: 1;
+    
+    
+
+}
+.Nav__small{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.Nav__logo{
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: lowercase;
+    color: var(--footerColor);
+}
+.Nav__toggle{
+    font-size: 1.5rem;
+}
+
+.Nav__links, .Nav__btn{
+    display: none;
+}
+
+/* block nav */
+.Nav__card{
+    width: 90%;
+    top: 11%;
+    left: 6%;
+    /* border: none; */
+    background-color: var(--white);
+    position: absolute;
+    z-index: 1;
+}
+/* .Nav__card::before{
+    width: 100%;
+    height: 100%;
+    background-color: red;
+} */
+.card-item{
+    display: block;
+    text-align: center;
+    margin-top: 4%;
+    color: var(--servicesBg);
+    cursor: pointer;
+}
+.card-item:hover{
+    color: var(--footerColor);
+    text-decoration: none;
+}
+
+/* show__links */
+.show__links{
+    display: block;
+}
+
+
+@media screen and (min-width: 767px) {
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2% 6%;
+    
+    }
+    .Nav__toggle{
+        display: none;
+    }
+    .Nav__links{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        margin-bottom: 0;
+        
+        color: var(--servicesBg);
+    }
+
+    .Nav__links--item{
+       
+        /* margin-bottom: 0; */
+        margin-right: 5%;
+        cursor: pointer;
+        /* padding: 0; */
+        padding-bottom: 4%;
+        
+    }
+    .Nav__links--item:hover{
+        
+        color: var(--footerColor);
+        border-bottom: 2px solid var(--btnColor);
+    }
+    .Nav__btn{
+        display: block;
+        padding: 10px 20px;
+        border: none;
+    }
+}
+
+@media screen and (min-width: 1023px){
+    .Nav__logo{
+        width: 9rem;
+    }
+    .Nav__links{
+        margin-right: 10%;
+    }
+    .Nav__links--item{
+       
+        margin-right: 10%;
+    }
+}

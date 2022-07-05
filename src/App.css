@@ -1,38 +1,43 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+
+*{
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Public Sans', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+:root{
+  /* primary */
+  --footerColor: hsl(233, 26%, 24%);
+  --btnColor: hsl(136, 65%, 51%);
+  --btnColorgradient: hsl(192, 70%, 51%);
+  
+ /* neutral */
+  
+  --servicesBg: hsl(233, 8%, 62%);
+  --lightGrayishBlue: hsl(220, 16%, 96%);
+  --heroBg: hsl(0, 0%, 98%);
+  --white: hsl(0, 0%, 100%);
 }
-
-.App-link {
-  color: #61dafb;
+body{
+  overflow-x: hidden;
 }
+.Button__wrapper{
+  border: none;
+  padding: 10px 30px;
+  border-radius: 50px;
+  font-size: 1rem;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  color: var(--white);
+  background-image: linear-gradient(to right, var(--btnColor), var(--btnColorgradient));
+}
+.Button__wrapper:hover{
+  --btnColor: hsl(136, 65%, 51%, 75%);
+  --btnColorgradient: hsl(180, 11%, 2%, 50%);
+  background-image: linear-gradient(to right, var(--btnColor), var(--btnColorgradient));
 }

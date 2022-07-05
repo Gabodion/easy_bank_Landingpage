@@ -1,0 +1,128 @@
+.Hero__wrapper{
+    background-color: var(--heroBg);
+    /* position: relative; */
+    
+    padding: 0% 0% 15%;
+   
+    /* width: 100%; */
+}
+.Hero__content{
+    order: 2;
+    text-align: center;
+    margin-top: 20%;
+}
+.Hero__content--heading{
+    color: var(--footerColor);
+}
+.Hero__content--para{
+    color: var(--servicesBg);
+}
+.Hero__img{
+    order: 1;
+    background-image:url('../../assets/images/bg-intro-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    height: 50vh;
+    
+}
+.Hero__img--phone{
+    margin-top: -20%;
+    
+    
+}
+.Hero__btn{
+
+}
+/* .Hero__img--second{
+   
+    position: absolute;
+    top: 10px;
+    left: 0; 
+    
+    
+} */
+
+@media screen and (min-width: 767px) {
+
+    .Hero__content{
+        margin-top: 50%;
+    }
+    .Hero__content--heading{
+        font-size: 4rem;
+    }
+    .Hero__content--para{
+        font-size: 2rem;
+        width: 90%;
+        margin: 0 auto 5%;
+    }
+    .Hero__btn{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1023px) {
+.Hero__wrapper{
+    padding-bottom: 0%;
+}
+.Hero__content{
+    order: 1;
+    text-align: left;
+    padding-left: 8%;
+    margin-top: 10%;
+}
+.Hero__content--heading{
+    font-size: 2.5rem;
+    
+}
+.Hero__content--para{
+    width: 100%;
+    margin-bottom: 5%;
+    font-size: 1.05rem;
+}
+.Hero__img{
+    background-image:url(../../assets/images/bg-intro-desktop.svg);
+    order: 2;
+    height: 85vh;
+    background-position: bottom left;
+    /* background-size: cover, cover; */
+    
+}
+.Hero__img--phone{
+    position: relative;
+    margin-top: -8%;
+    right: -8%;
+    width: 110%;
+    
+    
+}
+
+
+}
+@media screen and (min-width: 1260px) {
+    .Hero__content{
+        margin-top: 10%;
+    }
+    .Hero__content--para{
+        width: 90%;
+        margin-left: 0;
+        margin-bottom: 5%;
+        font-size: 1.05rem;
+    }
+    .Hero__btn{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+  
+    .Hero__img--phone{
+        position: relative;
+        margin-top: -8%;
+        right: -28%;
+        width: 80%;
+        
+        
+    }
+    
+}

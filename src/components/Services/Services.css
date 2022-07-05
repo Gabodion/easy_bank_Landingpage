@@ -1,0 +1,71 @@
+.Service__wrapper{
+    background-color: var(--lightGrayishBlue);
+    padding: 15% 0%;
+    text-align: center;
+}
+.Service__title{
+    margin-bottom: 10%;
+}
+.Service__title h1{
+    line-height: 1;
+    margin-bottom: 5%;
+}
+.Service__title p, .Service__features p{
+    color: var(--servicesBg);
+}
+.Service__features{
+    margin-bottom: 5%;
+}
+.Service__features h3{
+    margin: 5% 0;
+}
+.Service__features p{
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+@media screen and (min-width: 767px) {
+    .Service__title p{
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1023px) {
+    .Service__wrapper{
+        padding: 10% 8%;
+        text-align: left;
+        
+    }
+    
+    .Service__title p, .Service__features p{
+        margin-left: 0;
+    }
+    .Service__features{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .Service__features h3{
+        margin: 8% 0;
+    }
+}
+
+@media screen and (min-width: 1270px) {
+    .Service__features{
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+
+    .Service__title{
+        margin-bottom: 6%;
+    }
+    .Service__title p{
+        width: 55%;
+       
+    }
+    
+}
